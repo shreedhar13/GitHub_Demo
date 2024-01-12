@@ -13,5 +13,6 @@ author -> shreedhar jagatap
 8.untracked ->new files that git doesnt yet track,,modified->changed,,staged->file is ready to be commited,,unmodified->unchanged<br>
 9.to replicate these changes in ur github account ,,2 stage process is followed,,1.add,2.commit<br>
 10.add->now added file are become staged,,adds new or changed files in your working dir to the Git staging area using "git add 'file name' " command.if there are many modification ->"git add ."<br>
-11.commit-> git commit -m "some message or comments for this modification so that it can help at the time of tracking history of modification"<br>
-12.
+11.after "git add .",,,all modification displayed in green color,,ie;file is at staged state
+12.commit-> git commit -m "some message or comments for this modification so that it can help at the time of tracking history of modification"<br>
+13.
