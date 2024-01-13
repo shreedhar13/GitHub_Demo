@@ -71,5 +71,5 @@ index f10d021..43bf1c4 100644<br>
 -<p>hello this is my local file,created from my side</p> ->main branch index.html<br>
 \ No newline at end of file<br>
 +<p>hello this is my local file,created from my side</p><br>  
-+<h1>line 2 of feature2</h1>->feature1 branch index.html<br>
++<h1,style="display:inline;">line 2 of feature2</h1>->feature1 branch index.html<br>
 \ No newline at end of file<br>
