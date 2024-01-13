@@ -37,39 +37,39 @@ thus now localrepo folder become git repo bcz it has now .git file in it<br>
    third->change branch name master to main,,bcz github has changed bydefault branch from master to main so....see apna college for more info
    fourth->now use git push origin main,,,,,but if u are working on localrepo for more time in day,,,then u have to write git push origin main every time when u change something,,,,instead we use git push -u origin main   ,thus from next time onwards u can just write "git push" it willautomatically push the changes in origin and in main branch of origin present on ut github account
    DONE....ur index.html and style.css is pushed on origin(ie;current working repo is LocalRepo bcz we placed origin link https://github.com/shreedhar13/LocalRepo.git)
-   and inside "main" named branch
+   and inside "main" named branch<br>
 26.now i created README.md  inside localrepo from our local side
-27.Thats why create repo on Github and clone it in ut local side ,,then u can create any no of files folders i that,,and finally push it,,,which is easy workflow
+27.Thats why create repo on Github and clone it in ut local side ,,then u can create any no of files folders i that,,and finally push it,,,which is easy workflow<br>
 
-# want to create more than 1 branches in ur origin(currently working github repo),,,,,,,why origin see video
-ie;within main branch there are mainy teams who are worj=king on diff diff task,,like front end developer,back end,ui/ux designer,app designer..etc features,,,in that case u can create branch for each team,,,where each team take a copy of main branch and work on it and finally that team merge there changes into main branch to form complete product
+# want to create more than 1 branches in ur origin(currently working github repo),,,,,,,why origin see video<br>
+ie;within main branch there are mainy teams who are worj=king on diff diff task,,like front end developer,back end,ui/ux designer,app designer..etc features,,,in that case u can create branch for each team,,,where each team take a copy of main branch and work on it and finally that team merge there changes into main branch to form complete product<br>
 
 28.i have created 2 features,,,1 branch is bydefault there with name 'main'  if u created repo on github
   else with name 'master' branch is created  when u create repo on ur local side as we discussed above...
-  thus total 3 branches main,feature1,feature2  in 'localrepo(local folder)' and reflect changes in 'Localrepo(github repo)'  u can give any name for branches
+  thus total 3 branches main,feature1,feature2  in 'localrepo(local folder)' and reflect changes in 'Localrepo(github repo)'  u can give any name for branches<br>
   'git branch' to check all branches present in origin or current working repo
-  'git checkout -b feature1' to create new branch named feature 1 and switched to feature1 from current working branch
+  'git checkout -b feature1' to create new branch named feature 1 and switched to feature1 from current working branch<br>
 
   to delete branch 'git branch -d branch_name'
   i hava deleted feature2 'git branch -d feature2' ,,,,note:feature2 is deleted only when ur out of this branch,,,ie;if u are in feature2 branch and u try to delete feature2 itself then error is shown,,so come out of that branch and then delete it....
-  git checkout main ->jump to or switched to main branch from current branch
+  git checkout main ->jump to or switched to main branch from current branch<br>
 
-  but this created branch info is not yet reflected at github....
+  but this created branch info is not yet reflected at github....<br>
 
-29.i switched in feature1(bcz i have created feature1 branch inside localrepo and localrepo's "main"(bydefault) branch has 3 files(index.html,README.md,style.css),feature1 also has exactly these 3 files ie;1copy of main branch is assigned in feature1 branch,,,,and when i created feature2 brach inside local repo then also 1copy of main branch is assigned to feature2 but we deletd feature2 branch,so copy also deleted.... )
+29.i switched in feature1(bcz i have created feature1 branch inside localrepo and localrepo's "main"(bydefault) branch has 3 files(index.html,README.md,style.css),feature1 also has exactly these 3 files ie;1copy of main branch is assigned in feature1 branch,,,,and when i created feature2 brach inside local repo then also 1copy of main branch is assigned to feature2 but we deletd feature2 branch,so copy also deleted.... )<br>
 30.now u can change anything inside this "copy of main branch"add and commit it ,,, which not reflect in main branch and what u cahnge in "main" branch will not reflect in feature1 branch ,,(ie;shaloow copy bro..),,ie;any branch ,activity/modification will not reflect in other branches of current working repo/origin.... 
 31.now reflect changes in github account use "git push origin feature1",,,,,if u do from main branch(git push origin main)(bydefault ur in main branch)then changes done in main only reflected in github account,,,if u do from feature1 branch then info of only feature1 is reflected in github account...now u see on ur github account feature1 name branch is instantiated
-32.now if we want to merge the main branch and feature1 branch ie;whatever changes u have done in featue1 branch should combined with main branch then there are 2 ways....1)git merge branch_name  ,,(from current branch and branch_name)  2)create PR (pull request) from github account
+32.now if we want to merge the main branch and feature1 branch ie;whatever changes u have done in featue1 branch should combined with main branch then there are 2 ways....1)git merge branch_name  ,,(from current branch and branch_name)  2)create PR (pull request) from github account<br>
 33.to check differences in 2 branches use git diff branch_name  ,,(from current branch and branch_name)
-  supoose i am inside feature1 branch and i want to compare it with main branch then from inside feature1 branch we exec command     "git diff main"
-  PS C:\Users\shree\Desktop\GITHUB_DESKTOP\localrepo> git diff main
-diff --git a/index.html b/index.html
-index f10d021..43bf1c4 100644
---- a/index.html
-+++ b/index.html
-@@ -1 +1,2 @@
--<p>hello this is my local file,created from my side</p>    ->main branch index.html
-\ No newline at end of file
-+<p>hello this is my local file,created from my side</p>     
-+<h1>line 2 of feature2</h1>                                ->feature1 branch index.html
-\ No newline at end of file
+  supoose i am inside feature1 branch and i want to compare it with main branch then from inside feature1 branch we exec command     "git diff main"<br>
+  PS C:\Users\shree\Desktop\GITHUB_DESKTOP\localrepo> git diff main<br>
+diff --git a/index.html b/index.html<br>
+index f10d021..43bf1c4 100644<br>
+--- a/index.html<br>
++++ b/index.html<br>
+@@ -1 +1,2 @@<br>
+-<p>hello this is my local file,created from my side</p>    ->main branch index.html<br>
+\ No newline at end of file<br>
++<p>hello this is my local file,created from my side</p>   <br>  
++<h1>line 2 of feature2</h1>                                ->feature1 branch index.html<br>
+\ No newline at end of file<br>
